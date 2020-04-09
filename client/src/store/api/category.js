@@ -10,6 +10,6 @@ export async function getCategories() {
       payload: data,
     });
   } catch (err) {
-    console.log(err);
+    console.log('Something went wrong');
   }
 }

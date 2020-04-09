@@ -17,4 +17,4 @@ If you encounter proxy error. Just manually end the server with ctrl + c then ru
 
 All the above command should run from the root directory
 
-### Add a category first before adding a new income or expense :)
+### Add a category first before adding a new income or expense :))

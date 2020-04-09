@@ -1,0 +1,13 @@
+.custom-nav {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout {
+  cursor: pointer;
+}
+.logout:hover {
+  color: tomato;
+  transition: 0.23ms;
+}

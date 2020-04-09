@@ -8,6 +8,7 @@ connectDB();
 const users = require('./routes/users');
 const incomes = require('./routes/incomes');
 const expenses = require('./routes/expenses');
+const category = require('./routes/category');
 
 const auth = require('./auth');
 
@@ -18,5 +19,6 @@ app.use(express.urlencoded());
 app.use('/users', users);
 app.use('/incomes', auth, incomes);
 app.use('/expenses', auth, expenses);
+app.use('/category', auth, category);
 
 app.listen(PORT, () => console.log(`Server running at port: ${PORT}`));

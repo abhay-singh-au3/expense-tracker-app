@@ -3,14 +3,14 @@ const router = express.Router();
 const {
   getExpenses,
   addExpense,
-  deleteExpense
+  deleteExpense,
+  expenseData,
 } = require('../controllers/expenses');
 
-router
-  .route('/')
-  .get(getExpenses)
-  .post(addExpense);
+router.route('/').get(getExpenses).post(addExpense);
 
 router.route('/:id').delete(deleteExpense);
+
+router.route('/download/:category').get(expenseData);
 
 module.exports = router;

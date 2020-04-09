@@ -9,6 +9,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import AddIncome from '../../components/Income/AddIncome';
 import AddExpense from '../../components/Expense/AddExpense';
 import AddCategory from '../../components/AddCategory/AddCategory';
+import DownloadData from '../../components/DownloadData/DownloadData';
 
 function Home(props) {
   useEffect(() => {
@@ -37,6 +38,9 @@ function Home(props) {
         <div className="row">
           <div className="col-md-4">
             <AddCategory />
+          </div>
+          <div className="col-md-4 offset-md-4 mb-5">
+            <DownloadData />
           </div>
         </div>
       </div>

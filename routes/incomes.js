@@ -3,14 +3,14 @@ const router = express.Router();
 const {
   getIncomes,
   addIncome,
-  deleteIncome
+  deleteIncome,
+  incomeData,
 } = require('../controllers/incomes');
 
-router
-  .route('/')
-  .get(getIncomes)
-  .post(addIncome);
+router.route('/').get(getIncomes).post(addIncome);
 
 router.route('/:id').delete(deleteIncome);
+
+router.route('/download/:category').get(incomeData);
 
 module.exports = router;
